@@ -18,10 +18,4 @@ public class RegisterController {
         return "registration_form";
     }
 
-    @PostMapping("/save")
-    public String saveRegister(@ModelAttribute User user, Model model) {
-        model.addAttribute("user", user);
-        return "display_form";
-    }
-
 }
